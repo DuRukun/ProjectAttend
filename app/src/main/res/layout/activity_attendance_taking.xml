@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.granger.myapplication.attendanceTaking">
+
+    <TextView
+        android:id="@+id/defaultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:textSize="23dp"
+        android:text="Currently in module" />
+
+    <TextView
+        android:id="@+id/moduleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="EE1001"
+        android:textSize="30dp"
+        android:layout_below="@+id/defaultText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/moduleLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moduleInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="27dp"
+        android:text="At E5-04-21" />
+
+    <Button
+        android:id="@+id/attendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/defaultText"
+        android:layout_alignLeft="@+id/defaultText"
+        android:layout_alignRight="@+id/defaultText"
+        android:layout_alignStart="@+id/defaultText"
+        android:layout_below="@+id/moduleLocation"
+        android:layout_marginTop="55dp"
+        android:textSize="23dp"
+        android:text="Attend" />
+</RelativeLayout>
